@@ -53,10 +53,6 @@ public class Libro {
     private Categoria categoria;
     private String resumen;
     private String isbn;
-    @Column(name = "fecha_publicacion")
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    @Temporal(TemporalType.DATE)
-    private Date fechaPublicacion;
     @Column(unique = true)
     private String codigoPublico;
     @ManyToMany

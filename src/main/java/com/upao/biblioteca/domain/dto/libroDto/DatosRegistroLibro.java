@@ -12,6 +12,6 @@ import java.util.List;
  * Incluye campos como título, estado, portada, edicion, categoria, resumen, etc y nombre del autor y del editorial.
  */
 public record DatosRegistroLibro(String titulo, String portada, String edicion,
-                                 Categoria categoria, String resumen, String isbn, @DateTimeFormat(pattern = "yyyy/MM/dd") java.util.Date fechaPublicacion,
-                                 String codigoPublico, List<String>autorNombres, String editorialNombre) implements Serializable {
+                                 Categoria categoria, String resumen, String isbn, String codigoPublico,
+                                 List<String>autorNombres, String editorialNombre) implements Serializable {
 }

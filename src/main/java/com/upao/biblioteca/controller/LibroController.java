@@ -67,7 +67,6 @@ public class LibroController {
                         libro.getCategoria(),
                         libro.getResumen(),
                         libro.getIsbn(),
-                        libro.getFechaPublicacion(),
                         libro.getCodigoPublico(),
                         libro.getEditorial().getNombre()
                 ));
@@ -111,7 +110,6 @@ public class LibroController {
         nuevoLibro.setCategoria(datosRegistroLibro.categoria());
         nuevoLibro.setResumen(datosRegistroLibro.resumen());
         nuevoLibro.setIsbn(datosRegistroLibro.isbn());
-        nuevoLibro.setFechaPublicacion(datosRegistroLibro.fechaPublicacion());
         nuevoLibro.setCodigoPublico(datosRegistroLibro.codigoPublico());
 
         List<String> nombresAutores = datosRegistroLibro.autorNombres();
@@ -148,7 +146,6 @@ public class LibroController {
                 libroGuardado.getCategoria(),
                 libroGuardado.getResumen(),
                 libroGuardado.getIsbn(),
-                libroGuardado.getFechaPublicacion(),
                 libroGuardado.getCodigoPublico(),
                 libroGuardado.getAutores().stream().map(Autor::getNombre).collect(Collectors.toList()),
                 libroGuardado.getEditorial().getNombre()

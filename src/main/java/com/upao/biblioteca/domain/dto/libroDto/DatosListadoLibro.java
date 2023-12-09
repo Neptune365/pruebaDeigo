@@ -18,7 +18,7 @@ import java.util.Date;
  * @version 1.3
  */
 public record DatosListadoLibro(String titulo, Estado estado, String portada, String edicion, Categoria categoria,
-                                String resumen, String isbn, Date fechaPublicacion, String autorNombre,
+                                String resumen, String isbn, String autorNombre,
                                 String editorialNombre) implements Serializable {
     /**
      * Construye un {@link DatosListadoLibro} basado en una entidad {@link Libro}.
@@ -27,8 +27,7 @@ public record DatosListadoLibro(String titulo, Estado estado, String portada, St
      */
     public DatosListadoLibro (Libro libro){
         this(libro.getTitulo(), libro.getEstado(), libro.getPortada(), libro.getEdicion(), libro.getCategoria(),
-                libro.getResumen(), libro.getIsbn(), libro.getFechaPublicacion()
-                , libro.getAutores().stream().map(autor -> autor.getNombre()).findFirst().orElse(""),
+                libro.getResumen(), libro.getIsbn(), libro.getAutores().stream().map(autor -> autor.getNombre()).findFirst().orElse(""),
                 libro.getEditorial().getNombre());
     }
 }

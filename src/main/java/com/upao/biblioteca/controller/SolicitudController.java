@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/solicitudes")
-@CrossOrigin("https://p2biblio.netlify.app")
+@CrossOrigin("https://bilio4upao.netlify.app")
 @RequiredArgsConstructor
 public class SolicitudController {
 

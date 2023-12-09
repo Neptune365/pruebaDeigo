@@ -45,7 +45,7 @@ public class Libro {
      * Imagen de la portada del libro.
      * Se almacena como un objeto Lob (Large Object) debido a su potencial tamaño grande.
      */
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(nullable = false, columnDefinition = "LONGTEXT")
     private String portada;
     private String edicion;
     @Enumerated(EnumType.STRING)

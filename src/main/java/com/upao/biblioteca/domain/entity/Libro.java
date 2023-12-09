@@ -6,6 +6,7 @@ import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -53,8 +54,9 @@ public class Libro {
     private String resumen;
     private String isbn;
     @Column(name = "fecha_publicacion")
-    @JsonFormat(pattern = "yyyy/MM/dd")
-    private LocalDate fechaPublicacion;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    @Temporal(TemporalType.DATE)
+    private Date fechaPublicacion;
     @Column(unique = true)
     private String codigoPublico;
     @ManyToMany

@@ -7,6 +7,7 @@ import com.upao.biblioteca.domain.entity.Libro;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * DTO for {@link com.upao.biblioteca.domain.entity.Libro}
@@ -17,7 +18,7 @@ import java.time.LocalDateTime;
  * @version 1.3
  */
 public record DatosListadoLibro(String titulo, Estado estado, String portada, String edicion, Categoria categoria,
-                                String resumen, String isbn, LocalDate fechaPublicacion, String autorNombre,
+                                String resumen, String isbn, Date fechaPublicacion, String autorNombre,
                                 String editorialNombre) implements Serializable {
     /**
      * Construye un {@link DatosListadoLibro} basado en una entidad {@link Libro}.

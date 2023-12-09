@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/usuario")
-@CrossOrigin("*")
+@CrossOrigin("https://p2biblio.netlify.app")
 @RequiredArgsConstructor
 public class UsuarioController {
 

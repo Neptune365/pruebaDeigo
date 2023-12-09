@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/libro")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://p2biblio.netlify.app")
 @RequiredArgsConstructor
 public class LibroController {
     @Autowired

@@ -23,7 +23,7 @@ import java.time.format.DateTimeParseException;
 
 @RestController
 @RequestMapping("/autor")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://p2biblio.netlify.app")
 @RequiredArgsConstructor
 public class AutorController {
     @Autowired
